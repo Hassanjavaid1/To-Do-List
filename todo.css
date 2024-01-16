@@ -1,0 +1,117 @@
+body {
+  background-image: url(background.jpg);
+  background-position: right;
+  color: white;
+}
+#input {
+  background-color: #ebecf0;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 18rem;
+  border: 0px;
+  font-size: 1rem;
+  text-indent: 0.4rem;
+}
+#input:focus {
+  outline: none;
+}
+#btn {
+  font-size: 1rem;
+  background: #fe0b8f;
+  padding: 0.9rem;
+  border: 0px;
+  color: white;
+  border-radius: 29px;
+  width: 5rem;
+  cursor: pointer;
+  position: absolute;
+  right: 32.2rem;
+  height: 3.2rem;
+  font-family: sans-serif;
+}
+h2 {
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.sub_container {
+  background: white;
+  padding: 2rem;
+  color: black;
+  border-radius: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+span {
+  float: right;
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+span:hover {
+  background-color: rgb(219, 219, 219);
+
+  text-align: center;
+
+  padding-right: 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.3rem;
+  border-radius: 4rem;
+}
+li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 3px 3px 2px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  font-family: sans-serif;
+  text-indent: 0.8rem;
+  text-transform: capitalize;
+}
+li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: -1rem;
+}
+.completedTask {
+  text-decoration: line-through;
+}
+.completedTask::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: -1rem;
+  background-image: url(checked.png);
+}
+#date {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.title_date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  line-height: 0;
+  margin-bottom: 1rem;
+}

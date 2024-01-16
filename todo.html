@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List!</title>
+    <link rel="stylesheet" href="todo.css" />
+    <script src="todo.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub_container">
+        <div class="title_date">
+          <h2>To-Do List!</h2>
+          <h3 id="date"></h3>
+        </div>
+        <div class="content_contaner">
+          <form onsubmit="submitForm(event)">
+            <input
+              type="text"
+              value=""
+              id="input"
+              placeholder="Add task..."
+              autocomplete="off"
+            />
+            <button id="btn">Add</button>
+          </form>
+        </div>
+        <p id="task_list"></p>
+      </div>
+    </div>
+  </body>
+</html>
